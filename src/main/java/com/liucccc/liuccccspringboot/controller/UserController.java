@@ -54,7 +54,7 @@ public class UserController {
         Map<String, Object> map = new HashMap<>(3);
 
         User user = new User();
-        user.setId(1L);
+//        user.setId(1L);
         user.setUsername("Liucccc");
         user.setPassword(null);
         map.put("作者信息", user);

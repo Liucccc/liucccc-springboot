@@ -5,6 +5,7 @@
         <id column="id" jdbcType="BIGINT" property="id" />
         <result column="user_name" jdbcType="VARCHAR" property="username" />
         <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="age" jdbcType="INTEGER" property="age" />
     </resultMap>
     <select id="getUserByName" resultType="com.liucccc.liuccccspringboot.entity.User">
         select * from t_user where user_name = #{username}

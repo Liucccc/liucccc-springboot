@@ -18,7 +18,8 @@ public interface UserMapper {
     @Select("select * from t_user where id = #{id}")
     @Results({
             @Result(property = "username", column = "user_name"),
-            @Result(property = "password", column = "password")
+            @Result(property = "password", column = "password"),
+            @Result(property = "age", column = "age")
     })
     User getUser(Long id);
 
